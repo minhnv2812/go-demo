@@ -1,0 +1,10 @@
+version: '3'
+services:
+  go-server:
+    container_name: go-server
+    image: go-server:latest
+    ports:
+      - 8080:8080
+    restart: always
+    volumes:
+      - ./configs/config_test.toml:./configs/config.toml
