@@ -1,4 +1,4 @@
-FROM golang:1.18
+FROM golang:1.18 AS go_builder
 WORKDIR /app
 COPY . .
 RUN CGO_ENABLED=0 go build -mod vendor -ldflags="-w -s" -v -o  /main .
