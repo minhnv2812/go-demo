@@ -1,2 +1,2 @@
 [server]
-listening = "0.0.0.0:8080"
+listening = "127.0.0.1:8080"

@@ -6,5 +6,9 @@ services:
     ports:
       - 8080:8080
     restart: always
-    volumes:
-      - ./configs/config_test.toml:./configs/config.toml
+#    volumes:
+#      - ./configs/config_test.toml:./configs/config.toml
+networks:
+  default:
+    external:
+      name: rikkei
