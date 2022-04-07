@@ -48,5 +48,5 @@ func main() {
 	{
 		v1.GET("/foods", getFoodById)
 	}
-	r.Run("127.0.0.1:8080")
+	r.Run(":8080")
 }
